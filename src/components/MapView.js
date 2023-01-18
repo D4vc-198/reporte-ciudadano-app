@@ -42,7 +42,7 @@ const MapView = () => {
   }
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyAbPfcVZcF6UsuIOHGRkY4_GFM-BUebLjo',
+    googleMapsApiKey: 'KEY-GOOGLE-CLOUD',
   })
 
   if (!isLoaded) return <div>Cargando...</div>

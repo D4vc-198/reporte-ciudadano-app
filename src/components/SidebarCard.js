@@ -35,7 +35,7 @@ const SidebarCard = (props) => {
   //data.results[0].address_components)
   const fetchData = async () => {
     return await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=AIzaSyAbPfcVZcF6UsuIOHGRkY4_GFM-BUebLjo`
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.lat},${coordinates.lng}&key=KEY-GOOGLE-CLOUD`
     )
       .then((response) => response.json())
       .then((data) => {
