@@ -1,0 +1,121 @@
+.sidebar{
+  background-color: #F8FAFB;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+  overflow-y:scroll
+}
+
+.sidebar:hover{
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-title{
+  padding: 10px 10px;
+  font-size: 5em;
+  color: #4D7CFE;
+}
+
+/* .sidebar .li-item{
+  user-select: none;
+  color: #65696A;
+  padding:12px;
+  cursor:pointer;
+  transition:all 0.5s;
+  display:flex;
+  align-items: center;
+  flex-direction:row;
+  font-weight: bolder;
+}
+
+.sidebar .li-item:hover{
+  background-color:#4D7CFE;
+  padding:12px;
+  color: #FFF;
+  } */
+
+.sidebar-card-container{
+  padding: 0 15px 0 15px;
+  }
+
+
+.sidebar-card-filter-txt{
+  display: block;
+}
+.sidebar-card-filter-checkbox{
+  margin: 0 10px 0 0;
+}
+.sidebar-card-txt-resultado{
+  text-align: left;
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #425175;
+}
+/* ====== SIDEBAR ITEM ====== */
+.sidebar-item {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  user-select: none;
+  background-color: #FFF;
+  padding: 5px 10px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar-item-ico-direccion-container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.sidebar-item:hover{
+  background-color: #4D7CFE;
+  color: #FFF;
+}
+
+.sidebar-item:hover .sidebar-item-icon{
+  background-color: #FFF;
+  color: #4D7CFE;
+
+}
+.sidebar-item:hover .sidebar-item-txt-colonia {
+  color: #FFF;
+}
+.sidebar-item:hover .sidebar-item-txt-calle {
+  color: #FFF;
+}
+
+.sidebar-item-icon-container{
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: auto;
+}
+
+.sidebar-item-icon-svg{
+  margin: auto;
+}
+
+.sidebar-item-direccion-container{
+  text-align: left;
+  padding: 5px 10px;
+  width: 90%;
+}
+.sidebar-item-txt-calle{
+  font-weight: 700;
+  color: rgb(66, 66, 66);
+}
+.sidebar-item-txt-colonia{
+  color: #7E92A7;
+}

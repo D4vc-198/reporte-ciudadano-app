@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+//CSS
+import './styles/App.css'
+// import SidePanel from './components/SidePanel'
+import Sidebar from './components/Sidebar'
+import './styles/Map.css'
 
-function App() {
+//Components
+import MapView from './components/MapView'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="sidebarCont">
+        <Sidebar />
+      </div>
+      <div className="main">
+        <MapView />
+      </div>
+    </>
+    // <div className="container">
+    //   <Sidebar />
+    //   <div className="content">
+    //     {/* <MapView /> */}
+    //     <div className="map-container">
+    //       <MapView />
+    //     </div>
+    //     <SidePanel />
+    //   </div>
+    // </div>
+  )
 }
 
-export default App;
+export default App
